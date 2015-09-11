@@ -1,0 +1,10 @@
+{
+    decl winInstP, dsnPtr;
+    de_load_design ("Filtro2_5_Design", 0);
+    winInstP = de_create_window(SCHEMATIC_WINDOW, NULL, 50, 50, 846, 500);
+    dsnPtr = de_load_design("Filtro2_5_Design", 0);
+    if (dsnPtr != NULL && winInstP != NULL)
+    {
+        deutil_file_open_update_window(winInstP, dsnPtr, "Filtro2_5_Design");
+    }
+}

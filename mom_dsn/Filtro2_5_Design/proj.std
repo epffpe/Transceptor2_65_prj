@@ -1,0 +1,45 @@
+==============================================================================
+
+                  ------ MOMENTUM STATISTICS (MW mode) ------
+
+              Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+                           Fri Dec 18 21:56:32 2009
+
+==============================================================================
+
+
+
+------------------------------------------------------------------------------
+SUBSTRATE GENERATION
+------------------------------------------------------------------------------
+
+ Process size :     2.20 MB
+ User Time    :    0h 0m18s
+ Elapsed Time :    0h 0m19s
+
+==============================================================================
+
+==============================================================================
+                    ---   STATUS SERVER MESSAGES  ---
+==============================================================================
+Simulation / Synthesis Messages
+
+Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+Simulation Mode: uW
+Substrate to be computed from 2 GHz to 2.4 GHz,
+                     and from 2.6 GHz to 3 GHz!
+Substrate calculations finished
+
+Status / Summary
+
+------------ Momentum Simulation -----------------
+
+Version: Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+Simulation mode: MW
+Design: Filtro2_5_Design
+
+Simulation started on : Fri Dec 18 21:56:07 2009
+
+Substrate calculation started
+.........|.........|.........|.........| 
+Substrate calculation finished

@@ -1,0 +1,87 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no TopDesignName="D:\designs\ADS\Transceptor2_65_prj\networks\filtro2_65_Design_TestBench"
+define filtro2_65_Design ( _net6  _net16 ) 
+;parameters 
+
+WLead=2.87817
+Llead=4.22075
+WRes=2.08243
+LTAP1=9.60655
+LTAP2=0.886669
+Slide=1.26565
+W1=2.04776
+SlideB=1.29238
+WC1=1.99332
+SC1=1.1957
+LC1=13.6452
+SlideC=1.28329
+SlideD=1.28959
+WC2=2.0166
+SC2=1.67242
+LC2=13.4753
+SlideE=1.29418
+SlideF=1.30327
+model MSUB_1 MSUB H=1.5 mm Er=4.3 Mur=1 Cond=1/((1) * 1.724e-8) Hu=1.0e+033 mm T=0.035 mm TanD=0.02 Rough=2.388e-3 mm 
+MLIN2:TL20  _net15 _net16 Subst="MSUB_1" W=WLead mm L=Llead mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis27  _net3 Subst="MSUB_1" W=WRes mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL19  _net3 _net5 Subst="MSUB_1" W=WRes mm L=LTAP1 mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MTEE_ADS:Dis26  _net5 _net26 _net15 Subst="MSUB_1" W1=WRes mm W2=WRes mm W3=WLead mm 
+MLIN2:TL18  _net26 _net36 Subst="MSUB_1" W=WRes mm L=LTAP2 mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis25  _net48 _net36 Subst="MSUB_1" W=WRes mm 
+MLIN2:TL17  _net47 _net48 Subst="MSUB_1" W=WRes mm L=Slide mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MSTEP:Dis24  _net46 _net47 Subst="MSUB_1" W1=W1 mm W2=WRes mm 
+MLIN2:TL16  _net45 _net46 Subst="MSUB_1" W=W1 mm L=SlideF mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis23  _net35 _net45 Subst="MSUB_1" W=WC1 mm 
+MLEF2:Dis22  _net34 Subst="MSUB_1" W=WC1 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis21  _net25 Subst="MSUB_1" W=WC1 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MCLIN:TL15  _net24 _net25 _net35 _net34 Subst="MSUB_1" W=WC1 mm S=SC1 mm L=LC1 mm 
+MBEND2:Dis20  _net24 _net14 Subst="MSUB_1" W=WC1 mm 
+MLIN2:TL14  _net13 _net14 Subst="MSUB_1" W=W1 mm L=SlideE mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MSTEP:Dis19  _net12 _net13 Subst="MSUB_1" W1=W1 mm W2=W1 mm 
+MLIN2:TL13  _net11 _net12 Subst="MSUB_1" W=W1 mm L=SlideC mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis18  _net11 _net23 Subst="MSUB_1" W=W1 mm 
+MLEF2:Dis17  _net22 Subst="MSUB_1" W=WC2 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis16  _net33 Subst="MSUB_1" W=WC2 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MCLIN:TL12  _net22 _net23 _net33 _net32 Subst="MSUB_1" W=WC2 mm S=SC2 mm L=LC2 mm 
+MBEND2:Dis15  _net44 _net32 Subst="MSUB_1" W=W1 mm 
+MLIN2:TL11  _net43 _net44 Subst="MSUB_1" W=W1 mm L=SlideC mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MSTEP:Dis14  _net42 _net43 Subst="MSUB_1" W1=W1 mm W2=W1 mm 
+MLIN2:TL10  _net41 _net42 Subst="MSUB_1" W=W1 mm L=SlideD mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis13  _net31 _net41 Subst="MSUB_1" W=WC2 mm 
+MLEF2:Dis12  _net30 Subst="MSUB_1" W=WC2 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis11  _net21 Subst="MSUB_1" W=WC2 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MCLIN:TL9  _net20 _net21 _net31 _net30 Subst="MSUB_1" W=WC2 mm S=SC2 mm L=LC2 mm 
+MBEND2:Dis10  _net20 _net10 Subst="MSUB_1" W=WC2 mm 
+MLIN2:TL8  _net9 _net10 Subst="MSUB_1" W=W1 mm L=SlideD mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MSTEP:Dis9  _net8 _net9 Subst="MSUB_1" W1=W1 mm W2=W1 mm 
+MLIN2:TL7  _net7 _net8 Subst="MSUB_1" W=W1 mm L=SlideC mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis8  _net7 _net19 Subst="MSUB_1" W=W1 mm 
+MLEF2:Dis7  _net18 Subst="MSUB_1" W=WC1 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis6  _net29 Subst="MSUB_1" W=WC1 mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MCLIN:TL6  _net18 _net19 _net29 _net28 Subst="MSUB_1" W=WC1 mm S=SC1 mm L=LC1 mm 
+MBEND2:Dis5  _net40 _net28 Subst="MSUB_1" W=W1 mm 
+MLIN2:TL5  _net39 _net40 Subst="MSUB_1" W=W1 mm L=SlideB mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MSTEP:Dis4  _net38 _net39 Subst="MSUB_1" W1=WRes mm W2=W1 mm 
+MLIN2:TL4  _net37 _net38 Subst="MSUB_1" W=WRes mm L=Slide mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MBEND2:Dis3  _net27 _net37 Subst="MSUB_1" W=WRes mm 
+MLIN2:TL3  _net17 _net27 Subst="MSUB_1" W=WRes mm L=LTAP2 mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLEF2:Dis2  _net2 Subst="MSUB_1" W=WRes mm L=0 mil Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MLIN2:TL2  _net2 _net4 Subst="MSUB_1" W=WRes mm L=LTAP1 mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+MTEE_ADS:Dis1  _net17 _net4 _net1 Subst="MSUB_1" W1=WRes mm W2=WRes mm W3=WLead mm 
+MLIN2:TL1  _net6 _net1 Subst="MSUB_1" W=WLead mm L=Llead mm Wall1=2.5e+028 mm Wall2=2.5e+028 mm Mod=1 
+end filtro2_65_Design
+filtro2_65_Design:filtro2_65_Design_1  _net5 _net6 
+Port:TERM_2  _net6 0 Num=2 Z=50 Noise=yes 
+Port:TERM_1  _net5 0 Num=1 Z=50 Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=0.0001 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=2375 MHz Stop=3125 MHz Step=7.5 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+

@@ -1,0 +1,174 @@
+==============================================================================
+
+                  ------ MOMENTUM STATISTICS (MW mode) ------
+
+              Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+                           Sat Dec 19 01:07:27 2009
+
+==============================================================================
+
+
+------------------------------------------------------------------------------
+MESH
+------------------------------------------------------------------------------
+
+STATISTICS
+----------
+ Rectangular cells :    259
+ Triangular cells  :    149
+ Via cells         :      0
+ Edge currents     :    619
+
+RESOURCES
+---------
+ Process size :     2.39 MB
+ User Time    :    0h 0m 0s
+ Elapsed Time :    0h 0m 1s
+
+==============================================================================
+
+==============================================================================
+
+                  ------ MOMENTUM STATISTICS (MW mode) ------
+
+              Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+                           Sat Dec 19 01:07:29 2009
+
+==============================================================================
+
+
+------------------------------------------------------------------------------
+SOLVER                        USER TIME      ELAPSED TIME      MEMORY         
+PROCESSES                      (h:m:s)          (h:m:s)         (MB)          
+------------------------------------------------------------------------------
+
+SIMULATION SET-UP
+-----------------
+ Initialization           |     0: 0: 0   |     0: 0: 0   |      1.48   
+ Ports analysis           |     0: 0: 0   |     0: 0: 0   |      0.07   
+ Mesh processing          |     0: 0: 0   |     0: 0: 0   |      6.23   
+
+ Matrix size : 2360
+ Reduced matrix size : 1434
+ Estimated process size : 38.08 MB
+
+1. SIMULATION FREQUENCY = 2.4 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0:11   |     21.54   
+ Basis creation           |     0: 0: 0   |     0: 0: 0   |      4.85   
+ Matrix load              |     0: 4:33   |     0: 2:20   |     46.63   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 2   |      0.70   
+ S parameters             |     0: 0: 0   |     0: 0: 0   |      0.00   
+
+2. SIMULATION FREQUENCY = 3 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0:10   |      0.00   
+ Matrix load              |     0: 4:35   |     0: 2:22   |      0.69   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 1   |      0.04   
+ S parameters             |     0: 0: 0   |     0: 0: 0   |      0.00   
+ Adaptive sampling        |     0: 0: 0   |     0: 0: 1   |      0.00   
+
+3. SIMULATION FREQUENCY = 2.8 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0: 9   |      0.00   
+ Matrix load              |     0: 4:33   |     0: 2:19   |      0.11   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 1   |      0.00   
+ S parameters             |     0: 0: 0   |     0: 0: 1   |      0.00   
+ Adaptive sampling        |     0: 0: 0   |     0: 0: 0   |      0.00   
+
+4. SIMULATION FREQUENCY = 2.6 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0:10   |      0.00   
+ Matrix load              |     0: 4:32   |     0: 2:18   |      0.08   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 2   |      0.02   
+ S parameters             |     0: 0: 0   |     0: 0: 0   |      0.00   
+ Adaptive sampling        |     0: 0: 0   |     0: 0: 1   |      0.00   
+
+5. SIMULATION FREQUENCY = 2.7 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0: 9   |      0.00   
+ Matrix load              |     0: 4:32   |     0: 2:19   |      0.16   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 1   |      0.00   
+ S parameters             |     0: 0: 0   |     0: 0: 1   |      0.00   
+ Adaptive sampling        |     0: 0: 0   |     0: 0: 0   |      0.00   
+
+6. SIMULATION FREQUENCY = 2.5 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0:10   |      0.00   
+ Matrix load              |     0: 4:32   |     0: 2:18   |      0.05   
+ Matrix solve             |     0: 0: 6   |     0: 0: 6   |      0.00   
+ Port calibration         |     0: 0: 2   |     0: 0: 2   |      0.04   
+ S parameters             |     0: 0: 0   |     0: 0: 1   |      0.00   
+ Adaptive sampling        |     0: 0: 0   |     0: 0: 0   |      0.00   
+
+7. SIMULATION FREQUENCY = 2.65 GHz 
+-------------------------
+ Green functions          |     0: 0:10   |     0: 0:10   |      0.00   
+
+------------------------------------------------------------------------------
+TOTALS
+------------------------------------------------------------------------------
+ Nr of Frequencies   : 7 
+
+ Process size :    83.04 MB
+ User Time    :    0h31m58s
+ Elapsed Time :    0h17m17s
+
+==============================================================================
+
+
+temporary work directory = C:\Windows\Temp\18720217
+
+==============================================================================
+                    ---   STATUS SERVER MESSAGES  ---
+==============================================================================
+Simulation / Synthesis Messages
+
+Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+Simulation Mode: uW
+Substrate valid
+Mesh generation at 3GHz.
+WARNING : 
+If the geometry contains lines that are within 1 degree of parallel they
+will be treated as parallel because the layout resolution is relatively
+coarse for this geometry. Please increase the layout resolution if this
+causes problems.
+Mesh generation finished
+S-parameter simulation
+WARNING : 
+The 2D port solver data is not available for 
+thick conductor feedlines, using default values (50 Ohm) 
+for the transmission line parameters.
+Solver selection: automated choice of direct solver
+
+Status / Summary
+
+------------ Momentum Simulation -----------------
+
+Version: Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+Simulation mode: MW
+Design: filtro2_65_Design
+
+Simulation started on : Sat Dec 19 01:07:27 2009
+
+Mesh generation started
+Mesh generation finished
+S-parameter simulation started
+Adaptive frequency sweep started
+Simulation frequency [1] = 2.4 GHz
+Simulation frequency [2] = 3 GHz
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 2.8 GHz
+Simulation frequency [4] = 2.6 GHz
+Simulation frequency [5] = 2.7 GHz
+Simulation frequency [6] = 2.5 GHz
+Simulation frequency [7] = 2.65 GHz
+---------------------------------------
+----- Simulator Abort in Progress -----
+-----         Please Wait         -----
+---------------------------------------

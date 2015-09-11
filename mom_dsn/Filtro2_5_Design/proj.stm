@@ -1,0 +1,90 @@
+==============================================================================
+
+                  ------ MOMENTUM STATISTICS (MW mode) ------
+
+              Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+                           Fri Dec 18 23:51:05 2009
+
+==============================================================================
+
+
+------------------------------------------------------------------------------
+MESH
+------------------------------------------------------------------------------
+
+STATISTICS
+----------
+ Rectangular cells :    239
+ Triangular cells  :    157
+ Via cells         :      0
+ Edge currents     :    595
+
+RESOURCES
+---------
+ Process size :     2.32 MB
+ User Time    :    0h 0m 0s
+ Elapsed Time :    0h 0m 0s
+
+==============================================================================
+
+------------------------------------------------------------------------------
+SOLVER                        USER TIME      ELAPSED TIME      MEMORY         
+PROCESSES                      (h:m:s)          (h:m:s)         (MB)          
+------------------------------------------------------------------------------
+
+SIMULATION SET-UP
+-----------------
+ Initialization           |     0: 0: 0   |     0: 0: 0   |      1.45   
+ Ports analysis           |     0: 0: 0   |     0: 0: 0   |      0.01   
+ Mesh processing          |     0: 0: 0   |     0: 0: 1   |      5.36   
+
+ Matrix size : 2280
+ Reduced matrix size : 1430
+ Estimated process size : 37.87 MB
+
+------------------------------------------------------------------------------
+TOTALS
+------------------------------------------------------------------------------
+
+ Process size :     6.86 MB
+ User Time    :    0h 0m 0s
+ Elapsed Time :    0h 0m 1s
+
+==============================================================================
+
+==============================================================================
+                    ---   STATUS SERVER MESSAGES  ---
+==============================================================================
+Simulation / Synthesis Messages
+
+Momentum MomEngine 7.0 (*) 2008.200 Nov  3 2007
+Simulation Mode: uW
+Substrate valid
+Mesh generation at 2.8GHz.
+WARNING : 
+If the geometry contains lines that are within 1 degree of parallel they
+will be treated as parallel because the layout resolution is relatively
+coarse for this geometry. Please increase the layout resolution if this
+causes problems.
+Mesh generation finished
+Mesh processing
+
+Status / Summary
+
+------------ Momentum Simulation -----------------
+
+Version: Momentum MomEngine 7.x (*)
+Simulation mode: MW
+Design: Filtro2_5_Design
+
+Simulation started on : Fri Dec 18 23:51:05 2009
+
+Mesh generation started
+Mesh generation finished
+Mesh processing started
+...initializing
+...analyzing ports
+...extracting layout
+...expanding thick conductors
+...reducing mesh
+Mesh processing finished

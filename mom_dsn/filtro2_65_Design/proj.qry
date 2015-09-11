@@ -1,0 +1,16 @@
+#Momentum: B.07.00 (*) 2008.200 Nov  3 2007 
+#Momentum Date and Time: Sat Dec 19 01:07:27 2009
+
+Overall database status : 1 (file present and valid)
+
+Frequency range : from 2 GHz to 3 GHz.
+
+Requested frequency range : from 2.4 GHz to 3 GHz.
+
+Individual status fields : (0 = FALSE, 1 = TRUE)
+ File exists             : 1
+ Substrates match        : 1
+ Frequency-range matches : 1
+
+Corresponding potentialpath : d:\designs\ADS
+Corresponding potentialname : d:\designs\ADS\substrates\0003.sdb

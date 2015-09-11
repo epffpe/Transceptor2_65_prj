@@ -1,0 +1,41 @@
+CITIFILE A.01.01
+
+#Momentum: B.07.00 (*) 2008.200 Nov  3 2007 
+#Momentum Date and Time: Fri Dec 18 23:51:06 2009
+
+NAME Momentum.Connectivity
+
+CONSTANT NBR_OF_PORTS 2
+
+VAR freq MAG 1
+
+DATA S[1,1] RI
+DATA S[1,2] RI
+DATA S[2,1] RI
+DATA S[2,2] RI
+DATA PORTZ[1] RI
+DATA PORTZ[2] RI
+
+VAR_LIST_BEGIN
+  -1.0
+VAR_LIST_END
+
+BEGIN
+  1,   0.0
+END
+BEGIN
+  0,   0.0
+END
+BEGIN
+  0,   0.0
+END
+BEGIN
+  1,   0.0
+END
+BEGIN
+  50.0,   0.0
+END
+BEGIN
+  50.0,   0.0
+END
+
